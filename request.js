@@ -4,14 +4,14 @@ async function returnJSON() {
 
 returnJSON().then(data => {
     data.forEach((element, index) => {
-        let div = document.createElement('div');
-        let headers = document.createElement('div');
-        let content = document.createElement('div');
-        let postId = document.createElement('h1');
-        let userId = document.createElement('h1');
-        let title = document.createElement('h1');
-        let body = document.createElement('p')
-        let wrapper = document.getElementById('wrapper');
+        const div = document.createElement('div');
+        const headers = document.createElement('div');
+        const content = document.createElement('div');
+        const postId = document.createElement('h1');
+        const userId = document.createElement('h1');
+        const title = document.createElement('h1');
+        const body = document.createElement('p')
+        const wrapper = document.getElementById('wrapper');
 
         postId.textContent = 'Post id: ' + data[index]['id'];
         userId.textContent = 'User id: ' + data[index]['userId'];

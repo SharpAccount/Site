@@ -1,47 +1,152 @@
 body {
-    background: linear-gradient(to bottom, #240124, #8801d7);
+    background-color: #976ab2;
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
     margin: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+hr {
+    border-top: #bdbbbb solid 2px;
+    margin: 0;
+}
+p {
+    margin: 10px 0;
 }
 #wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
 }
-header {
-    color: white;
-    text-align: center;
-    border-bottom: white solid 4px;
-    margin-bottom: 12px;
-}
-.requestBlock {
+#products{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+header {
+    font-size: 25px;
+    height: 100%;
+    background-color: #723da4;
+    text-align: center;
+}
+#sidebarTerritory {
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-    border: white solid;
-    border-radius: 40px;
-    width: 75%;
-    height: 100%;
-    margin: 15px 0;
+    position: relative;
+    transition: left 0.8s ease-in-out;
+    left: 0;
+    width: 255px;
 }
-.Ids {
-    display: flex;
+#sidebar {
+    display: block;
+    background-color: #723da4;
     flex-direction: column;
+    padding: 10px;
+    width: 215px;
+    white-space: nowrap;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.sidebarHeader {
+    text-align: center;
+    background-color: #c49ce0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
 }
-.postContent {
+.sidebarProducts {
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    max-height: 30%;
+}
+.sidebarElement {
     display: flex;
     flex-direction: column;
-    width: 80%;
 }
-.title {
-    height: 100%;
-    text-align: center;
+.sidebarElementInfo {
+    display: flex;
+    flex-direction: column;
+    border-bottom: #bdbbbb solid 1px;
 }
-.postText {
+.sidebarLastElement {
+    display: flex;
+    flex-direction: column;
+}
+.totalPrice{
+    display: flex;
+    flex-direction: column;
+}
+#sidebarIcon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    rotate: 90deg;
+    transition: all 0.5s ease;
+    position: sticky;
+    margin-top: 18px;
+    top: 18px;
+}
+.product {
+    margin: 15px 35px;
+    height: 450.175px;
+    width: 319px;
+    background-color: #723da4;
+    border-radius: 10px;
+}
+.prodInfo {
+    padding: 0 10px 10px;
+    height: fit-content;
+    border-radius: 0 0 10px 10px;
+    background-color: #723da4;
+}
+.productFrame {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 80%;
+    max-width: 350px;
+    max-height: 200px;
+
+}
+.productImg {
+    border-radius: 10px 10px 0 0;
+    height: 199.16px;
+    max-width: 100%;
+}
+.productBlockTitle {
+
+}
+.productTitle {
     text-align: center;
+    height: 81.6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.productPrice {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 15px;
+}
+.productRating {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 15px;
+}
+.productCategory {
+    position: relative;
+    left: 15px;
 }
